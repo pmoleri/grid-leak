@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { IGX_GRID_DIRECTIVES, IgxPaginatorComponent } from '@infragistics/igniteui-angular';
+import { IGX_GRID_DIRECTIVES, IgxPaginatorComponent } from 'igniteui-angular';
 import { Subject, takeUntil } from 'rxjs';
 import { EmployeesType } from '../models/northwind/employees-type';
 import { NorthwindService } from '../services/northwind.service';
