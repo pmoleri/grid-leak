@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IGX_GRID_DIRECTIVES, IgxPaginatorComponent } from '@infragistics/igniteui-angular';
+import { IGX_GRID_DIRECTIVES, IgxPaginatorComponent } from 'igniteui-angular';
 import { GridComponent } from './grid.component';
 
 describe('GridComponent', () => {
