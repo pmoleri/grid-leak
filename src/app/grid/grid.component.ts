@@ -3,16 +3,18 @@ import { IGX_GRID_DIRECTIVES, IgxPaginatorComponent } from 'igniteui-angular';
 import { Subject, takeUntil } from 'rxjs';
 import { EmployeesType } from '../models/northwind/employees-type';
 import { NorthwindService } from '../services/northwind.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-grid',
-  imports: [IGX_GRID_DIRECTIVES, IgxPaginatorComponent],
+  imports: [IGX_GRID_DIRECTIVES, IgxPaginatorComponent, FormsModule],
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.scss']
 })
 export class GridComponent implements OnInit, OnDestroy {
   private destroy$: Subject<void> = new Subject<void>();
   public northwindEmployees: EmployeesType[] = [];
+  public show = true;
 
   constructor(
     private northwindService: NorthwindService,
